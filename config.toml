@@ -6,13 +6,14 @@ build-mindetach-module = true
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
-exclusive-patches = false                                             # excludes all patches by default and only applies included-patches
+app-name = "YouTube"
+build-mode = "apk"                                                                                                                                                                                                                                                                                # 'both', 'apk' or 'module'
+excluded-patches = ""                                                                                                                                                                                                                                                                             # space-seperated patches to exclude (multiline strings are not supported)
+included-patches = "client-spoof disable-zoom-haptics general-ads hdr-auto-brightness hide-floating-microphone-button hide-get-premium hide-watch-in-vr hide-watermark minimized-playback old-quality-layout premium-heading remember-video-quality sponsorblock video-ads vanced-microg-support" # space-seperated patches to include (non-excluded patches are included by default)
+version = "auto"                                                                                                                                                                                                                                                                                  # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
+exclusive-patches = true                                                                                                                                                                                                                                                                          # excludes all patches by default and only applies included-patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-module-prop-name = "ytrv-magisk"
+# module-prop-name = "ytrv-magisk"
 
 [YouTube-Extended]
 app-name = "YouTube"
@@ -25,6 +26,8 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 [Music]
 build-mode = "both"
 excluded-patches = ""
+included-patches = "background-play codecs-unlock exclusive-audio-playback hide-get-premium music-microg-support music-video-ads upgrade-button-remover" # space-seperated patches to include (non-excluded patches are included by default)
+exclusive-patches = true                                                                                                                                 # excludes all patches by default and only applies included-patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 arch = "both"
 
