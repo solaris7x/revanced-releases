@@ -9,7 +9,8 @@ Extensive ReVanced builder
 
 Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
 
-[**mindetach module**](https://github.com/j-hc/mindetach-magisk) in the releases section detaches YouTube and YouTube Music from Play Store and blocks their forced updates.
+[**mindetach module**](https://github.com/j-hc/mindetach-magisk) in the releases section detaches YouTube and YouTube Music from Play Store and blocks their forced updates.  
+[**zygisk-detach**](https://github.com/j-hc/zygisk-detach) is another detach module I made which is more powerful than mindetach. You can use it if you have zygisk enabled.
 
 ## Features
  * Support all present and future ReVanced and [ReVanced Extended](https://github.com/inotia00/revanced-patches) apps
@@ -26,11 +27,11 @@ Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/relea
 #### **Note that the [CI workflow](../../actions/workflows/ci.yml) is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.**
 
 ## To include/exclude patches or patch more ReVanced Apps
-[**See the list of patches**](https://github.com/revanced/revanced-patches#-patches)
+[**See the list of patches**](https://j-hc.github.io/rvmm-config-gen/)
 
  * Star the repo :eyes:
  * [Fork the repo](https://github.com/j-hc/revanced-magisk-module/fork) or use it as a template
- * Customize [`config.toml`](./config.toml)
+ * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
  * Run the build [workflow](../../actions/workflows/build.yml)
  * Grab your modules and APKs from [releases](../../releases)
 
