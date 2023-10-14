@@ -1,41 +1,21 @@
-logging-to-file = true        # enables logging of every patch process to a seperate file
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-build-mindetach-module = true
+# logging-to-file = true        # enables logging of every patch process to a seperate file
+# enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-app-name = "YouTube"
-build-mode = "apk"                                                                                                                                                                                                                                                                                                                                # 'both', 'apk' or 'module'
-excluded-patches = ""                                                                                                                                                                                                                                                                                                                             # space-seperated patches to exclude (multiline strings are not supported)
-included-patches = "client-spoof disable-zoom-haptics hide-ads video-ads hdr-auto-brightness hide-cast-button hide-crowdfunding-box hide-floating-microphone-button hide-get-premium hide-watch-in-vr hide-watermark minimized-playback old-quality-layout premium-heading remember-video-quality sponsorblock vanced-microg-support materialyou" # space-seperated patches to include (non-excluded patches are included by default)
-version = "auto"                                                                                                                                                                                                                                                                                                                                  # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
-exclusive-patches = true                                                                                                                                                                                                                                                                                                                          # excludes all patches by default and only applies included-patches
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-# module-prop-name = "ytrv-magisk"
-
-# [YouTube-Extended]
-# app-name = "YouTube"
-# patches-source = "inotia00/revanced-patches"
-# integrations-source = "inotia00/revanced-integrations"
-# rv-brand = "ReVanced Extended"
-# build-mode = "apk"
-# excluded-patches = ""
-# included-patches = "client-spoof disable-zoom-haptics hdr-auto-brightness hide-floating-microphone-button hide-get-premium hide-watch-in-vr hide-watermark minimized-playback old-quality-layout premium-heading remember-video-quality sponsorblock vanced-microg-support remove-screenshot-restriction enable-minimized-playback force-premium-heading hide-general-ads hide-video-ads optimize-resource materialyou" # space-seperated patches to include (non-excluded patches are included by default)
-# exclusive-patches = true                                                                                                                                                                                                                                                                                                                                                                                                # excludes all patches by default and only applies included-patches
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
-
-[Music-Multi]
-app-name = "YouTube Music"
-build-mode = "apk"
-excluded-patches = ""
-included-patches = "background-play codecs-unlock exclusive-audio-playback hide-get-premium music-microg-support music-video-ads upgrade-button-remover" # space-seperated patches to include (non-excluded patches are included by default)
-exclusive-patches = true                                                                                                                                 # excludes all patches by default and only applies included-patches
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+build-mode = "apk"                                                                                                                                                                                                                                                                                                                                                                    # 'both', 'apk' or 'module'
+included-patches = "'client-spoof' 'disable-zoom-haptics' 'hide-ads' 'video-ads' 'hdr-auto-brightness' 'hide-cast-button' 'hide-crowdfunding-box' 'hide-floating-microphone-button' 'hide-get-premium' 'hide-watch-in-vr' 'hide-watermark' 'minimized-playback' 'old-quality-layout' 'premium-heading' 'remember-video-quality' 'sponsorblock' 'vanced-microg-support' 'materialyou'" # space-seperated patches to include (non-excluded patches are included by default)
+exclusive-patches = true                                                                                                                                                                                                                                                                                                                                                              # excludes all patches by default and only applies included-patches
+version = "auto"
+apkmirror-arch = "arm64-v8a"                                                                                                                                                                                                                                                                                                                                                          # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
 build-mode = "apk"
-excluded-patches = ""
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
-apkmirror-arch = "both"
+included-patches = "'background-play' 'codecs-unlock' 'exclusive-audio-playback' 'hide-get-premium' 'music-microg-support' 'music-video-ads' 'upgrade-button-remover'" # space-seperated patches to include (non-excluded patches are included by default)
+exclusive-patches = true                                                                                                                                               # excludes all patches by default and only applies included-patches
+version = "auto"
+apkmirror-arch = "arm64-v8a"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
